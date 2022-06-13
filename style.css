@@ -1,5 +1,9 @@
 /* CSS Variable start*/
-
+:root{
+    --neavy-blue: #0f2480;
+    --light-blue: #3554d1;
+    --yellow: #f9bc16;
+}
 /* CSS Variable end*/
 
 /* Common CSS start */
@@ -7,6 +11,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
 }
 img{
     max-width: 100%;
@@ -18,7 +25,7 @@ h2{
     font-size: 40px;
 }
 h3{
-    font-size: 30;
+    font-size: 30px;
 }
 h4{
     font-size: 25px;
@@ -38,18 +45,75 @@ p{
 /* Header Section end */
 
 /* About Section start */
+.about-section{
+    padding: 70px 0;
+}
+.before-color{
+    position: relative;
+    display: block;
+}
+.before-color::before{
+    content: "";
+    width: 7px;
+    height: 100%;
+    background-color: var(--neavy-blue);
+    position: absolute;
+    left: -10px;
+    top: 0;
+}
+.about-text{
+    max-width: 450px;
+}
+.cta-btn{
+    display: inline-block;
+    background-color: white;
+    color: var(--neavy-blue);
+    padding: 10px 24px;
+    border: 1px solid var(--neavy-blue);
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cta-btn:hover{
+    background-color: var(--neavy-blue);
+    color: white;
+}
 /* About Section end */
 
 /* House Section start */
 /* House Section end */
 
 /* Price Section start */
+.price-section{
+    padding: 50px 0;
+}
+.single-card{
+    background-color: var(--light-blue);
+}
+.card-head{
+    background-color: var(--neavy-blue);
+}
+.special-card{
+    background-color: var(--yellow);
+}
+.card-text p:last-child {
+    padding-bottom: 50px;
+}
 /* Price Section end */
 
 /* Deal Section start */
 /* Deal Section end */
 
 /* Choose Section start */
+.choose-section{
+    padding: 50px 0;
+    background-color: var(--neavy-blue);
+}
+.choose-img-box{
+    width: 65px;
+    height: 65px;
+}
 /* Choose Section end */
 
 /* Customer Section start */
