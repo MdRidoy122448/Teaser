@@ -64,7 +64,7 @@ p{
 .before-color::before{
     content: "";
     width: 7px;
-    height: 100%;
+    height: 50px;
     background-color: var(--neavy-blue);
     position: absolute;
     left: -10px;
@@ -112,6 +112,17 @@ p{
 /* Price Section end */
 
 /* Deal Section start */
+.deal-section{
+    padding: 50px 0;
+}
+.deal-img1 img{
+    width: 100%;
+    max-height: 400px;
+}
+.deal-img2 img{
+
+}
+
 /* Deal Section end */
 
 /* Choose Section start */
