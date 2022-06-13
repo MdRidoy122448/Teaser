@@ -3,6 +3,7 @@
     --neavy-blue: #0f2480;
     --light-blue: #3554d1;
     --yellow: #f9bc16;
+    --orange: #f97616;
 }
 /* CSS Variable end*/
 
@@ -123,4 +124,29 @@ p{
 /* Contact Section end  */
 
 /* Footer Section start  */
+footer{
+    padding: 50px 0;
+    background-color: var(--neavy-blue);
+}
+.footer-first{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer input{
+    max-width: 300px;
+    border: none;
+    outline: none;
+}
+.subscribe{
+    padding: 10px 24px;
+    background-color: var(--orange);
+}
+footer ul li a{
+    transition: 0.5s;
+}
+footer ul li a:hover{
+    opacity: 0.6;
+}
+
 /* Footer Section end  */
