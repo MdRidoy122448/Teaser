@@ -52,7 +52,13 @@ p{
 /* Common CSS end */
 
 /* Header Section start */
-.header-section .container-fluid{
+.header-section{
+    background-image: url("img/header-bg.png");;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: relative;
+}
+.nav-section .container-fluid{
     max-width: 1500px;
 }
 .access-nav-item{
@@ -65,7 +71,7 @@ p{
     display: inline-block;
 }
 .navbar i{
-    color: var(--neavy-blue);
+    color: white
 }
 .navbar-toggler{
     border: none;
@@ -73,6 +79,13 @@ p{
 .navbar-toggler:focus{
     box-shadow: none;
 } 
+.nav-right a.nav-link {
+    color: white;
+    cursor: pointer;
+}
+.nav-right a.nav-link:hover{
+    opacity: 0.8;
+}
 .offcanvas-header, .offcanvas-body{
     background-color: var(--neavy-blue);
     font-size: 25px;
@@ -84,6 +97,17 @@ p{
 .offcanvas-body .navbar-nav .nav-item:hover{
     background-color: var(--blue);
     padding-left: 25px;
+}
+.header-content{
+    padding: 70px 0;
+    max-width: 570px;
+}
+.header-content span{
+    color: var(--neavy-blue);
+}
+.header-content h1{
+    line-height: 100px;
+    color: var(--light-blue);
 }
 /* Header Section end */
 
@@ -111,7 +135,7 @@ p{
     display: inline-block;
     background-color: white;
     color: var(--neavy-blue);
-    padding: 10px 24px;
+    padding: 10px 25px;
     border: 1px solid var(--neavy-blue);
     text-decoration: none;
     border-radius: 25px;
@@ -265,5 +289,4 @@ footer ul li a{
 footer ul li a:hover{
     opacity: 0.6;
 }
-
 /* Footer Section end  */
