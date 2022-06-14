@@ -1,6 +1,7 @@
 /* CSS Variable start*/
 :root{
     --neavy-blue: #0f2480;
+    --blue: #162e99;
     --light-blue: #3554d1;
     --yellow: #f9bc16;
     --orange: #f97616;
@@ -51,6 +52,39 @@ p{
 /* Common CSS end */
 
 /* Header Section start */
+.header-section .container-fluid{
+    max-width: 1500px;
+}
+.access-nav-item{
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.access-nav-item li{
+    display: inline-block;
+}
+.navbar i{
+    color: var(--neavy-blue);
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+} 
+.offcanvas-header, .offcanvas-body{
+    background-color: var(--neavy-blue);
+    font-size: 25px;
+}
+.offcanvas-body .navbar-nav .nav-item{
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+.offcanvas-body .navbar-nav .nav-item:hover{
+    background-color: var(--blue);
+    padding-left: 25px;
+}
 /* Header Section end */
 
 /* About Section start */
@@ -93,6 +127,9 @@ p{
 /* House Section start */
 .house-section .container-fluid{
     max-width: 1500px;
+}
+.house-section{
+    padding: 50px 0;
 }
 .card{
     border: 0;
@@ -167,7 +204,7 @@ p{
 }
 .slider-content{
     max-width: 900px;
-} */
+}
 /* Customer Section end */
 
 /* Contact Section start */
