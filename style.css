@@ -91,6 +91,22 @@ p{
 /* About Section end */
 
 /* House Section start */
+.house-section .container-fluid{
+    max-width: 1500px;
+}
+.card{
+    border: 0;
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 700;
+}
 /* House Section end */
 
 /* Price Section start */
@@ -118,9 +134,6 @@ p{
 .deal-img1 img{
     width: 100%;
     max-height: 400px;
-}
-.deal-img2 img{
-
 }
 
 /* Deal Section end */
@@ -159,9 +172,6 @@ p{
 
 /* Contact Section start */
 /* Contact Section end  */
-.contact-section{
-    padding: 60px 0;
-}
 .contact-section .container-fluid{
     padding-left: 0;
     background-color: var(--neavy-blue)
@@ -176,10 +186,7 @@ p{
     height: 100%;
 }
 .contact-info{
-    max-width: 60%;
-}
-form input{
-
+    max-width: 70%;
 }
 textarea{
     resize: none;
